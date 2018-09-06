@@ -16,6 +16,9 @@ export class OrderItemsComponent implements OnInit {
 
   constructor() { }
 
+  ngOnInit() {
+  }
+
   emitIncreaseQty(item: CartItem){
     this.increaseQty.emit(item)
   }
@@ -28,7 +31,6 @@ export class OrderItemsComponent implements OnInit {
     this.remove.emit(item)
   }
 
-  ngOnInit() {
-  }
+  
 
 }
