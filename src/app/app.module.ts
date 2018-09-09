@@ -16,15 +16,18 @@ import { RestaurantsService } from './restaurants/restaurants.service';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
+import {ShoppingCartService} from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component';
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component'
-
-import {ShoppingCartService} from './restaurant-detail/shopping-cart/shopping-cart.service';
 import { OrderComponent } from './order/order.component';
+import { OrderService } from './order/order.service';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { OrderItemsComponent } from './order/order-items/order-items.component';
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
-import { OrderService } from './order/order.service';
+
+import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component'
+import { RatingComponent } from './shared/rating/rating.component';
 
 
 
@@ -43,8 +46,11 @@ import { OrderService } from './order/order.service';
     ReviewsComponent,
     OrderComponent,
     OrderItemsComponent,
+    OrderSummaryComponent,
     InputComponent,
-    RadioComponent
+    RadioComponent,
+    DeliveryCostsComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
